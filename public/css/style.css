@@ -746,7 +746,6 @@ header .header__register > li:hover {
     color: #0065fc;
   }
   .filters__base:nth-child(2) {
-    width: 100px;
     order: 4;
   }
   .filters__base:nth-child(2) > span {
