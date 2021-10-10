@@ -723,7 +723,7 @@ header .header__register > li:hover {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 0 20px;
+    padding: 0 3rem;
   }
   .filters__containers {
     display: flex;
