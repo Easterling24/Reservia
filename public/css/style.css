@@ -770,9 +770,11 @@ header .header__register > li:hover {
   }
   .places__popular__reviews {
     margin-left: 1rem;
+    position: relative;
   }
   .places__popular__reviews > div {
-    margin-top: 1rem;
+    position: absolute;
+    bottom: 1rem;
   }
   .places__increase > div {
     height: 20px;

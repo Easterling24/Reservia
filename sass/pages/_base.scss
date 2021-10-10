@@ -833,11 +833,7 @@ header {
     align-items: baseline;
     padding: 0 3rem;
 
-    // &__base:nth-child(4) {
-    //   width: 140px;
-    //   padding-left: 2.7rem;
-    //   font-size: 0.85rem;
-    // }
+  
     &__containers {
       display: flex;
       flex-direction: column;
@@ -892,8 +888,10 @@ header {
 
     &__popular__reviews {
       margin-left: 1rem;
+      position: relative;
       & > div {
-        margin-top: 1rem;
+        position: absolute;
+        bottom: 1rem;
       }
     }
 
