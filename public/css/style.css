@@ -159,6 +159,7 @@ header .header__register > li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #0065fc;
 }
 .filters__base > div {
   height: 40px;
@@ -444,7 +445,7 @@ header .header__register > li:hover {
   text-align: left;
 }
 
-@media only screen and (min-width: 930px) and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     max-width: 900px;
     margin: auto;
@@ -460,6 +461,9 @@ header .header__register > li:hover {
   }
   .filters__base {
     width: 170px;
+  }
+  .filters__icons {
+    color: #0065fc;
   }
 
   .filters__base {
@@ -477,10 +481,17 @@ header .header__register > li:hover {
   }
   .places__popular .places__card__popular {
     margin-bottom: 2rem;
+    height: auto;
+  }
+  .places__popular .places__card__popular > img {
+    height: auto;
   }
 
   .places__popular__reviews > p {
     margin-bottom: 10px;
+  }
+  .places__popular__reviews > div {
+    margin-bottom: 20px;
   }
 
   .activities__base {
@@ -491,13 +502,13 @@ header .header__register > li:hover {
     height: auto;
   }
 }
-@media only screen and (min-width: 690px) and (max-width: 950px) {
+@media only screen and (min-width: 481px) and (max-width: 750px) {
   .header__logo {
     margin-left: 1rem;
   }
 
   body {
-    max-width: 750px;
+    max-width: 650px;
     margin: auto;
   }
 
@@ -506,16 +517,22 @@ header .header__register > li:hover {
     justify-content: center;
     align-items: center;
   }
+  .section1 > h2 {
+    display: inline;
+    padding: 0 2rem;
+    text-align: center;
+  }
 
   .search {
     height: 80px;
-    width: 600px;
+    width: 500px;
   }
 
   .filters {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
   }
   .filters__title {
     font-size: 1.3rem;
@@ -538,6 +555,7 @@ header .header__register > li:hover {
   .filters__base > div {
     height: 60px;
     width: 60px;
+    color: #0065fc;
   }
 
   .info {
@@ -623,7 +641,7 @@ header .header__register > li:hover {
     height: 350px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 620px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     max-width: 480px;
     margin: auto;
@@ -707,11 +725,6 @@ header .header__register > li:hover {
     align-items: baseline;
     padding: 0 20px;
   }
-  .filters__base:nth-child(4) {
-    width: 140px;
-    padding-left: 2.7rem;
-    font-size: 0.85rem;
-  }
   .filters__containers {
     display: flex;
     flex-direction: column;
@@ -719,17 +732,28 @@ header .header__register > li:hover {
     height: 250px;
   }
   .filters__containers > div {
-    margin: 10px 5px;
     width: 100%;
-    height: 50px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
   }
-  .filters__base {
-    font-size: 0.85rem;
-    padding-left: 2rem;
+  .filters__containers > div > span {
+    padding-left: 0.7rem;
   }
   .filters__base > div {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    color: #0065fc;
+  }
+  .filters__base:nth-child(2) {
+    width: 100px;
+    order: 4;
+  }
+  .filters__base:nth-child(2) > span {
+    padding-left: 2rem;
+  }
+  .filters__base:nth-child(4) > span {
+    margin-left: 1.5rem;
   }
 
   .info div {

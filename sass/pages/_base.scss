@@ -138,14 +138,13 @@ header {
 
 .filters {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
   &__containers {
     display: flex;
     margin-right: 1.5rem;
- 
   }
 
   &__base {
@@ -182,6 +181,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      color: $cd-text;
     }
 
     & > div {
@@ -500,12 +500,10 @@ header {
   }
 }
 
-@media only screen and (min-width: 930px) and (max-width: 1200px) {
-
-
-  body{
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
     max-width: 900px;
-    margin:auto;
+    margin: auto;
   }
 
   .filters {
@@ -521,14 +519,11 @@ header {
       width: 170px;
     }
 
-   
-
-  }
-
-
-
-
-
+    &__icons{
+      color: $cd-text;
+    }
+ 
+  } 
 
   .filters__base {
     margin-right: 1rem;
@@ -536,22 +531,30 @@ header {
     padding-left: 2rem;
   }
 
-
-  .info{
-    margin-top: 2rem;   
+  .info {
+    margin-top: 2rem;
   }
 
-  
   .places__popular {
     height: 100%;
     .places__card__popular {
       margin-bottom: 2rem;
+      height: auto;
+
+      & > img {
+        height: auto;
+      }
     }
+
+ 
   }
 
   .places__popular__reviews {
     & > p {
       margin-bottom: 10px;
+    }
+    & > div {
+      margin-bottom: 20px;
     }
   }
 
@@ -560,50 +563,21 @@ header {
   }
 
   .activities__overlap1 {
-
-    &--card:nth-child(1){
+    &--card:nth-child(1) {
       height: auto;
     }
-    
   }
-
-
-
-
-  
-
- 
-  
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Tablet Size
 
-@media only screen and (min-width: 690px) and (max-width: 950px) {
-
-
+@media only screen and (min-width: 481px) and (max-width: 750px) {
   .header__logo {
     margin-left: 1rem;
   }
 
   body {
-    max-width: 750px;
+    max-width: 650px;
     margin: auto;
   }
 
@@ -611,17 +585,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    & > h2 {
+      display: inline;
+      padding:  0 2rem;
+      text-align: center;
+    }
+   
   }
 
   .search {
     height: 80px;
-    width: 600px;
+    width: 500px;
+   
+
   }
 
   .filters {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
 
     &__title {
       font-size: 1.3rem;
@@ -645,6 +628,7 @@ header {
       & > div {
         height: 60px;
         width: 60px;
+        color: $cd-text;
       }
     }
   }
@@ -754,7 +738,7 @@ header {
 
 // Phone Size
 
-@media only screen and (min-width: 0px) and (max-width: 620px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     max-width: 480px;
     margin: auto;
@@ -844,11 +828,11 @@ header {
     align-items: baseline;
     padding: 0 20px;
 
-    &__base:nth-child(4) {
-      width: 140px;
-      padding-left: 2.7rem;
-      font-size: 0.85rem;
-    }
+    // &__base:nth-child(4) {
+    //   width: 140px;
+    //   padding-left: 2.7rem;
+    //   font-size: 0.85rem;
+    // }
     &__containers {
       display: flex;
       flex-direction: column;
@@ -856,17 +840,34 @@ header {
       height: 250px;
 
       & > div {
-        margin: 10px 5px;
         width: 100%;
-        height: 50px;
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 0.7rem;
+        & > span {
+          padding-left: 0.7rem;
+        }
       }
     }
+
     &__base {
-      font-size: 0.85rem;
-      padding-left: 2rem;
       & > div {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
+        color: $cd-text;
+      }
+    }
+
+    &__base:nth-child(2) {
+      width: 100px;
+      order: 4;
+      & > span {
+        padding-left: 2rem;
+      }
+    }
+    &__base:nth-child(4) {
+      & > span {
+        margin-left: 1.5rem;
       }
     }
   }
