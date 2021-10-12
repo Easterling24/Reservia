@@ -108,6 +108,8 @@ header .header__register > li:hover {
   background: blue;
   color: #fff;
   border-radius: 0 15px 15px 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
   outline: none;
   border: none;
   cursor: pointer;
@@ -526,13 +528,13 @@ header .header__register > li:hover {
     height: auto;
   }
 }
-@media only screen and (min-width: 680px) and (max-width: 1024px) {
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
   .header__logo {
     margin-left: 1rem;
   }
 
   body {
-    max-width: 800px;
+    max-width: 768px;
     margin: auto;
   }
 
@@ -685,7 +687,7 @@ header .header__register > li:hover {
 }
 @media only screen and (min-width: 581px) and (max-width: 760px) {
   body {
-    max-width: 640px;
+    max-width: 660px;
     margin: auto;
   }
 
@@ -750,9 +752,9 @@ header .header__register > li:hover {
     width: 50px;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 580px) {
+@media only screen and (max-width: 580px) {
   body {
-    max-width: 400px;
+    max-width: 420px;
     margin: auto;
   }
 
@@ -859,7 +861,6 @@ header .header__register > li:hover {
     color: #0065fc;
   }
   .filters__base:nth-child(2) {
-    width: 140px;
     order: 4;
   }
   .filters__base:nth-child(2) > span {
