@@ -5,9 +5,7 @@
   scroll-behavior: smooth;
 }
 
-
-@media only screen and(min-width: 1025px) {
-  
+@media only screen and(min-width: 1201px) {
 }
 
 body {
@@ -18,6 +16,7 @@ body {
 * {
   font-family: "Raleway";
 }
+
 //Header
 
 header {
@@ -121,8 +120,8 @@ header {
     transition: all 300ms ease-in-out;
 
     &:focus {
-      border-top: 3px solid blue;
-      border-bottom: 3px solid blue;
+      border-top: 3px solid $cd-text;
+      border-bottom: 3px solid $cd-text;
     }
   }
 
@@ -145,6 +144,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 
   &__containers {
@@ -228,6 +228,10 @@ header {
   flex-direction: row;
   justify-content: space-between;
   margin: 3rem 0.5rem;
+  a {
+    text-decoration: none;
+    color: black;
+  }
   &__title {
     margin-left: 1rem;
   }
@@ -250,7 +254,7 @@ header {
 
   &__card {
     height: 250px;
-    width: 250px;
+    width: 230px;
     margin: 1rem 0.5rem;
     background: #fff;
     border-radius: 25px;
@@ -289,6 +293,7 @@ header {
   }
 
   &__more {
+    background: transparent;
     border: none;
     outline: none;
     text-align: left;
@@ -301,7 +306,7 @@ header {
     background: $cd-background;
     border-radius: 25px;
     padding: 12px 0;
-    margin-left: 4px;
+    margin-left: 20px;
 
     .places__increase {
       display: flex;
@@ -320,7 +325,7 @@ header {
     }
 
     .places__card__popular {
-      height: 150px;
+      height: 160px;
       width: 90%;
       background: #fff;
       border-radius: 25px;
@@ -343,11 +348,17 @@ header {
     }
   }
 
+  .popular__link {
+    display: flex;
+    justify-content: center;
+  }
+
   &__popular__reviews {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 1rem;
+    position: relative;
+    padding: 0 20px;
 
     & > h3 {
       margin-bottom: 0;
@@ -485,13 +496,13 @@ header {
   min-height: 15vh;
   background: $cd-background;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 
   &__base {
     width: 35%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
   }
   ul {
     list-style: none;
@@ -505,9 +516,9 @@ header {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
   body {
-    max-width: 900px;
+    max-width: 1025px;
     margin: auto;
   }
 
@@ -515,6 +526,7 @@ header {
     display: flex;
     align-items: baseline;
     flex-direction: column;
+    flex-wrap: wrap;
 
     &__containers {
       margin: 0;
@@ -524,11 +536,10 @@ header {
       width: 170px;
     }
 
-    &__icons{
+    &__icons {
       color: $cd-text;
     }
- 
-  } 
+  }
 
   .filters__base {
     margin-right: 1rem;
@@ -540,18 +551,29 @@ header {
     margin-top: 2rem;
   }
 
+  .popular__link {
+    width: 100%;
+  }
+
+  .places__hotels{
+    width: 80%;
+      &__card {
+        width: 250px;
+      }
+  }
+
   .places__popular {
     height: 100%;
+
     .places__card__popular {
       margin-bottom: 2rem;
-      height: auto;
+      height: 150px;
+      width: 95%;
 
       & > img {
         height: auto;
       }
     }
-
- 
   }
 
   .places__popular__reviews {
@@ -576,13 +598,13 @@ header {
 
 // Tablet Size
 
-@media only screen and (min-width: 481px) and (max-width: 750px) {
+@media only screen and (min-width: 680px) and (max-width: 1024px) {
   .header__logo {
     margin-left: 1rem;
   }
 
   body {
-    max-width: 650px;
+    max-width: 800px;
     margin: auto;
   }
 
@@ -592,20 +614,18 @@ header {
     align-items: center;
     & > h2 {
       display: inline;
-      padding:  0 2rem;
+      padding: 0 2rem;
       text-align: center;
     }
-   
   }
 
   .search {
     height: 80px;
     width: 500px;
-   
-
   }
 
   .filters {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,7 +637,7 @@ header {
 
     &__containers {
       display: flex;
-      width: 100%;
+      width: 90%;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -629,7 +649,7 @@ header {
     &__base {
       margin: 1rem 10px;
       height: 60px;
-      padding-left: 20px;
+      padding-left: 4rem;
       & > div {
         height: 60px;
         width: 60px;
@@ -647,20 +667,26 @@ header {
     display: flex;
     flex-direction: column-reverse;
     &__popular {
+      margin-left: 0;
       margin-bottom: 2rem;
+      
     }
 
     & .places__list__popular {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      & > a {
+        width: 30%;
+      }
     }
 
     & .places__card__popular {
       display: flex;
-      width: 30%;
-      height: 100%;
+      height: 300px;
+      width: 100%;
       flex-direction: column;
+
       & > img {
         object-fit: cover;
         width: 100%;
@@ -669,8 +695,9 @@ header {
       }
     }
 
-    &__rating {
-      margin-bottom: 1rem;
+    &__popular__reviews {
+      width: 90%;
+      position: relative;
     }
 
     &__hotels {
@@ -678,8 +705,27 @@ header {
       padding: 0;
     }
 
+    &__list {
+      & > a {
+        width: 30%;
+      }
+    }
+
     &__card {
-      width: 45%;
+      width: 100%;
+      height: 270px;
+
+      position: relative;
+    }
+    &__reviews {
+      & > p {
+        margin-bottom: 1rem;
+      }
+
+      & > div {
+        position: absolute;
+        bottom: 5%;
+      }
     }
 
     &__more {
@@ -741,11 +787,79 @@ header {
   }
 }
 
+@media only screen and(min-width: 581px) and (max-width: 760px) {
+  body {
+    max-width: 640px;
+    margin: auto;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    &__ul {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__links {
+      width: 100%;
+    }
+  }
+
+  .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > h2 {
+      text-align: center;
+    }
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    &__containers {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__base {
+      height: 50px;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1rem;
+      & > div {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}
+
 // Phone Size
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 375px) and (max-width: 580px) {
   body {
-    max-width: 480px;
+    max-width: 400px;
     margin: auto;
   }
 
@@ -753,6 +867,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+
     .header__nav {
       width: 100%;
     }
@@ -778,6 +893,10 @@ header {
         &:hover {
           border-top: 2px solid transparent;
           border-bottom: 3px solid $cd-text;
+        }
+
+        & > a {
+          font-size: 1rem;
         }
       }
     }
@@ -816,6 +935,7 @@ header {
 
     &--button {
       width: 20%;
+      margin-left: -20px;
       cursor: pointer;
       border-radius: 15px;
       i {
@@ -831,9 +951,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 0 3rem;
+    padding: 0 20px;
 
-  
     &__containers {
       display: flex;
       flex-direction: column;
@@ -860,6 +979,7 @@ header {
     }
 
     &__base:nth-child(2) {
+      width: 140px;
 
       order: 4;
       & > span {
@@ -875,6 +995,7 @@ header {
 
   .info div {
     margin-left: 1rem;
+    padding: 3px;
     text-align: center;
     & > p {
       margin-left: -1rem;
@@ -885,6 +1006,21 @@ header {
     display: flex;
     flex-direction: column-reverse;
     margin: 2rem 0;
+
+    &__popular {
+      margin: 0;
+    }
+
+    &__list {
+      & > a {
+        width: 95%;
+      }
+    }
+    &__list__popular {
+      & > a {
+        width: 100%;
+      }
+    }
 
     &__popular__reviews {
       margin-left: 1rem;
@@ -1007,10 +1143,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 2rem;
 
-    & > div {
-      margin-left: 4.5rem;
-    }
+  
     ul {
       width: 300px;
     }
