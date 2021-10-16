@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 
-@media only screen and(min-width: 1201px) {
+@media only screen and(min-width: 1100px) and (max-width: 1600px) {
 }
 
 body {
@@ -240,7 +240,7 @@ header {
   }
 
   &__hotels {
-    width: 90%;
+    width: 85%;
     background: $cd-background;
     border-radius: 25px;
     display: flex;
@@ -307,6 +307,7 @@ header {
 
   &__popular {
     background: $cd-background;
+
     border-radius: 25px;
     padding: 12px 0;
     margin-left: 20px;
@@ -320,7 +321,7 @@ header {
     }
 
     .places__list__popular {
-      display: flex;
+      display: flex;  
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
@@ -328,7 +329,7 @@ header {
     }
 
     .places__card__popular {
-      height: 160px;
+      height: 150px;
       width: 90%;
       background: #fff;
       border-radius: 25px;
@@ -374,6 +375,12 @@ header {
 .activities {
   margin: 3rem 0.5rem;
 
+  a {
+    text-decoration: none;
+    color: black;
+    width: 250px;
+  }
+
   &__base {
     margin: 0 0.5rem;
   }
@@ -393,6 +400,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+      & > a {
+        display: flex;
+        width: 280px;
+      }
   }
 
   &__overlap {
@@ -402,8 +413,33 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    &--card:nth-child(1) {
+    & > a:nth-child(1) {
+
+      width: 100%;
+      height: 180px;
+        & > div {
+           & > img {
+             height: 110px;
+           }
+        }
+
+    }
+
+    & > a:nth-child(2){
+      width: 100%;
       height: 230px;
+        & > div {
+          & > img {
+            height: 150px;
+          }
+        }
+    }
+
+    
+
+    &--card:nth-child(1) {
+      height: 100%;
+  
 
       & > img {
         object-fit: cover;
@@ -441,16 +477,34 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+     & > a:nth-child(1){
+       height: 210px;
+       & > div {
+         & > img {
+           height: 150px;
+         }
+       }
+
+     }
+
+     & > a:nth-child(2){
+       height: 180px;
+      & > div {
+          & > img {
+            height: 100px;
+          }
+      }
+    }
 
     &--card:nth-child(1) {
       width: 100%;
-      height: 150px;
+      height: 100%;
       box-shadow: 0 3px 5px rgb(224, 217, 217);
       border-radius: 25px;
+    
       & > img {
         object-fit: cover;
         width: 100%;
-        height: 90px;
         border-radius: 25px 25px 0 0;
       }
       & > h3 {
@@ -460,13 +514,13 @@ header {
 
     &--card:nth-child(2) {
       width: 100%;
-      height: 200px;
+      height: 100%;
       box-shadow: 0 3px 5px rgb(224, 217, 217);
       border-radius: 25px;
+        
       & > img {
         object-fit: cover;
         width: 100%;
-        height: 138px;
         border-radius: 25px 25px 0 0;
       }
       & > h3 {
@@ -474,6 +528,8 @@ header {
         margin-bottom: 0.5rem;
       }
     }
+
+    
   }
 
   &__base {
@@ -519,9 +575,93 @@ header {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and ( min-width:1000px) and (max-width:1100px){
   body {
-    max-width: 1025px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .header__logo {
+    margin-left: 1rem;
+  }
+
+  .section1 {
+    margin-left: 1rem;
+  }
+  .filters {
+    margin-left: 1rem;
+      &__containers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      &__base {
+        margin-top: 1rem;
+
+      }
+  }
+
+  .info{
+    margin-left: 1rem;
+  }
+
+  .places__list {
+    & > a {
+      width: 280px;
+    }
+  }
+
+  .places__card{
+    width: 100%;
+  }
+
+  .places__card__popular {
+    height: 180px;
+  }
+
+
+ 
+
+
+
+
+
+  .activities__list div {
+    height: auto;
+  }
+
+  .activities__overlap1 {
+    &--card:nth-child(1){
+      height: auto;
+    }
+  }
+
+  .activities__base{
+    width: 220px;
+  }
+
+  .activities__overlap1 {
+    width: 220px;
+      &--card:nth-child(2) {
+        & > img {
+          height: 115px;
+        }
+
+      }
+   
+  }
+  .activities__overlap {
+    width: 220px;
+    &--card:nth-child(2){
+      height: 150px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+  body {
+    max-width: 1000px;
     margin: auto;
   }
 
@@ -588,8 +728,11 @@ header {
     }
   }
 
+ 
+
   .activities__base {
     height: auto;
+ 
   }
 
   .activities__overlap1 {
@@ -601,7 +744,7 @@ header {
 
 // Tablet Size
 
-@media only screen and (min-width: 761px)  and (max-width: 1024px) {
+@media only screen and (min-width: 740px)  and (max-width: 1024px) {
   .header__logo {
     margin-left: 1rem;
   }
@@ -741,59 +884,88 @@ header {
   .activities__list {
     display: flex;
     flex-direction: column;
-    & > div {
-      width: 100%;
-      margin-bottom: 3rem;
-    }
+  
   }
 
   .activities {
     &__base {
       margin: 0;
+ 
     }
 
-    &__overlap {
-      & > div:nth-child(1) {
-        height: 100%;
+    .activities__list {
+      & > a {
+        width: 100%;
+        & > div {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    .activities__overlap {
+      width: 100%;
+      margin-bottom: 2rem;
+      & > a:nth-child(1) {
+        width: 100%;
         margin-bottom: 3rem;
-        & > img {
-          height: 350px;
-        }
-      }
-
-      & > div {
-        height: 100%;
-
-        & > img {
-          height: 350px;
+      
+        & > div{
+          width: 100%;
+          height: 200px;
+  
+          & > img {
+            height: 130px;
+          }
         }
       }
     }
 
-    &__overlap1 {
-      & > div:nth-child(1) {
+    .activities__overlap1{
+      width: 100%;
+      & > a:nth-child(1){
+        width: 100%;
+        height: 370px;
         margin-bottom: 3rem;
-        height: 100%;
 
-        & > img {
-          height: 350px;
-        }
+        & > div {
+          width: 100%;
+       
+          & > img {
+            height: 300px;  
+          }
+        } 
       }
 
-      & > div:nth-child(2) {
-        height: 100%;
+      & > a:nth-child(2){
+        width: 100%;
+        height: 370px;
+        & > div { 
+          width: 100%;
+          & > img {
+            height: 300px;
+          }
 
-        & > img {
-          height: 350px;
+             h3 {
+            margin-bottom: 1rem;
+          }
+       
         }
       }
     }
+
+
+
+  
+
+     
+    
   }
 }
 
-@media only screen and(min-width: 581px)  and (max-width: 760px) {
+@media only screen and(min-width: 581px)  and (max-width: 761px) {
   body {
-    max-width: 660px;
+    max-width: 700px;
     margin: auto;
   }
   header {
@@ -1094,11 +1266,15 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
+        & > a{
+          width: 95%;
+        }
     }
 
     &__base {
-      width: 95%;
-      margin-bottom: 3rem;
+      width: 100%;
+      margin: 1rem 0;
+      
 
       & > img {
         object-fit: cover;
@@ -1107,39 +1283,62 @@ header {
     }
 
     &__overlap {
-      width: 95%;
-      & > div:nth-child(1) {
-        height: 100%;
-        margin-bottom: 3rem;
-        & > img {
-          height: 160px;
-        }
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      & > a {
+        width: 95%;
+        margin: 1rem 0;
       }
-      & > div:nth-child(2) {
-        height: 100%;
-        margin-bottom: 3rem;
-        & > img {
-          height: 160px;
-        }
+
+      & > a:nth-child(1){
+        width: 95%;
       }
+
+      & > a:nth-child(2){
+        width: 95%;
+      }
+      
+
+      // & > div:nth-child(1) {
+      //   height: 100%;
+      
+      //   & > img {
+      //     height: 160px;
+      //   }
+      // }
+      // & > div:nth-child(2) {
+      //   height: 100%;
+      //   margin-bottom: 1rem;
+      //   & > img {
+      //     height: 160px;
+      //   }
+      // }
     }
 
     &__overlap1 {
-      width: 95%;
-      & > div:nth-child(1) {
-        height: 100%;
-        margin-bottom: 3rem;
-        & > img {
-          height: 160px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+        & > a{
+          width: 95%;
+          margin: 1rem 0;
         }
-      }
-      & > div:nth-child(2) {
-        height: 100%;
-        margin-bottom: 3rem;
-        & > img {
-          height: 160px;
-        }
-      }
+      // & > div:nth-child(1) {
+      //   height: 100%;
+      //   margin-bottom: 3rem;
+      //   & > img {
+      //     height: 160px;
+      //   }
+      // }
+      // & > div:nth-child(2) {
+      //   height: 100%;
+      //   margin-bottom: 3rem;
+      //   & > img {
+      //     height: 160px;
+      //   }
+      // }
     }
   }
 
@@ -1147,7 +1346,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 2rem;
+
 
   
     ul {
