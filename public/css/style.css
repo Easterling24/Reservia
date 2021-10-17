@@ -297,11 +297,11 @@ header .header__register > li:hover {
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  position: relative;
   box-shadow: 0 3px 5px #e0d9d9;
 }
 .places__popular .places__card__popular > img {
   object-fit: cover;
-  height: 100%;
   width: 120px;
   border-radius: 25px 0 0 25px;
   transition: all 300ms;
@@ -317,11 +317,14 @@ header .header__register > li:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: relative;
   padding: 0 20px;
 }
 .places__popular__reviews > h3 {
   margin-bottom: 0;
+}
+.places__popular__reviews > div {
+  position: absolute;
+  bottom: 2%;
 }
 
 .activities {
@@ -491,9 +494,9 @@ header .header__register > li:hover {
   text-align: left;
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+@media only screen and (min-width: 1001px) and (max-width: 1149px) {
   body {
-    max-width: 1100px;
+    max-width: 950px;
     margin: auto;
   }
 
@@ -502,140 +505,125 @@ header .header__register > li:hover {
   }
 
   .section1 {
-    margin-left: 1rem;
+    padding: 0 1rem;
   }
 
   .filters {
-    margin-left: 1rem;
+    padding: 0 1rem;
   }
   .filters__containers {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
   .filters__base {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .info {
-    margin-left: 1rem;
+    padding: 0 1rem;
   }
 
-  .places__list > a {
-    width: 280px;
-  }
-
-  .places__card {
-    width: 100%;
-  }
-
-  .places__card__popular {
-    height: 180px;
-  }
-
-  .activities__list div {
-    height: auto;
-  }
-
-  .activities__overlap1--card:nth-child(1) {
-    height: auto;
-  }
-
-  .activities__base {
-    width: 220px;
-  }
-
-  .activities__overlap1 {
-    width: 220px;
-  }
-  .activities__overlap1--card:nth-child(2) > img {
-    height: 115px;
-  }
-
-  .activities__overlap {
-    width: 220px;
-  }
-  .activities__overlap--card:nth-child(2) {
-    height: 150px;
-  }
-}
-@media only screen and (min-width: 900px) and (max-width: 1000px) {
-  body {
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  .filters {
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .filters__containers {
-    margin: 0;
-  }
-  .filters__base {
-    width: 170px;
-  }
-  .filters__icons {
-    color: #0065fc;
-  }
-
-  .filters__base {
-    margin-right: 1rem;
-    width: 170px;
-    padding-left: 2rem;
-  }
-
-  .info {
-    margin-top: 2rem;
-  }
-
-  .popular__link {
-    width: 100%;
-  }
-
-  .places__hotels {
-    width: 80%;
-  }
-  .places__hotels__card {
-    width: 250px;
-  }
-
-  .places__popular {
-    height: 100%;
-  }
   .places__popular .places__card__popular {
-    margin-bottom: 2rem;
-    height: 150px;
-    width: 95%;
+    height: 180px;
+    position: relative;
   }
-  .places__popular .places__card__popular > img {
-    height: auto;
-  }
-
-  .places__popular__reviews > p {
-    margin-bottom: 10px;
-  }
-  .places__popular__reviews > div {
-    margin-bottom: 20px;
+  .places__popular .places__card__popular > div > div {
+    position: absolute;
+    bottom: 5%;
   }
 
   .activities__base {
-    height: auto;
+    width: 220px;
   }
 
-  .activities__overlap1--card:nth-child(1) {
-    height: auto;
+  .activities__overlap > a:nth-child(1) {
+    width: 200px;
+  }
+  .activities__overlap > a:nth-child(2) {
+    width: 200px;
+  }
+  .activities__overlap--card {
+    width: 200px;
   }
 }
-@media only screen and (min-width: 740px) and (max-width: 1024px) {
+@media only screen and (min-width: 874px) and (max-width: 1000px) {
   .header__logo {
     margin-left: 1rem;
   }
 
   body {
-    max-width: 768px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .section1 {
+    padding: 0 1rem;
+  }
+
+  .filters {
+    padding: 0 1rem;
+  }
+  .filters__containers {
+    flex-wrap: wrap;
+  }
+  .filters__base {
+    margin-bottom: 1rem;
+  }
+
+  .info {
+    padding: 0 1rem;
+  }
+
+  .popular__link {
+    height: 250px;
+  }
+
+  .places__popular {
+    width: 50%;
+  }
+  .places__popular__reviews > div {
+    position: absolute;
+    bottom: 5%;
+  }
+  .places__popular .places__card__popular {
+    height: 200px;
+    position: relative;
+  }
+
+  .activities {
+    padding: 0 1rem;
+  }
+  .activities__title {
+    margin-left: 0;
+  }
+  .activities__overlap--card {
+    width: 220px;
+  }
+  .activities__base {
+    width: 200px;
+  }
+  .activities__overlap > a {
+    width: 200px;
+  }
+  .activities__overlap--card {
+    width: 200px;
+  }
+  .activities__overlap1--card {
+    width: 200px;
+  }
+  .activities__overlap1 > a {
+    width: 200px;
+  }
+  .activities__overlap1 > a:nth-child(1) {
+    height: 220px;
+  }
+}
+@media only screen and (min-width: 762px) and (max-width: 873px) {
+  .header__logo {
+    margin-left: 1rem;
+  }
+
+  body {
+    max-width: 750px;
     margin: auto;
   }
 
@@ -660,7 +648,7 @@ header .header__register > li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0;
   }
   .filters__title {
     font-size: 1.3rem;
@@ -679,6 +667,7 @@ header .header__register > li:hover {
     margin: 1rem 10px;
     height: 60px;
     padding-left: 4rem;
+    width: 200px;
   }
   .filters__base > div {
     height: 60px;
@@ -711,6 +700,7 @@ header .header__register > li:hover {
     display: flex;
     height: 300px;
     width: 100%;
+    position: relative;
     flex-direction: column;
   }
   .places .places__card__popular > img {
@@ -718,10 +708,6 @@ header .header__register > li:hover {
     width: 100%;
     height: 150px;
     border-radius: 25px 25px 0 0;
-  }
-  .places__popular__reviews {
-    width: 90%;
-    position: relative;
   }
   .places__hotels {
     width: 100%;
@@ -753,36 +739,48 @@ header .header__register > li:hover {
   }
 
   .activities__base {
-    margin: 0;
+    margin-bottom: 1rem;
   }
   .activities .activities__list > a {
     width: 100%;
   }
   .activities .activities__list > a > div {
     width: 100%;
+    height: 410px;
     margin-bottom: 2rem;
   }
   .activities .activities__overlap {
     width: 100%;
-    margin-bottom: 2rem;
   }
   .activities .activities__overlap > a:nth-child(1) {
     width: 100%;
+    height: auto;
     margin-bottom: 3rem;
   }
   .activities .activities__overlap > a:nth-child(1) > div {
     width: 100%;
-    height: 200px;
+    height: 380px;
   }
   .activities .activities__overlap > a:nth-child(1) > div > img {
-    height: 130px;
+    height: 300px;
+  }
+  .activities .activities__overlap > a:nth-child(2) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .activities .activities__overlap > a:nth-child(2) > div {
+    height: 380px;
+  }
+  .activities .activities__overlap > a:nth-child(2) > div > img {
+    height: 300px;
   }
   .activities .activities__overlap1 {
     width: 100%;
   }
   .activities .activities__overlap1 > a:nth-child(1) {
     width: 100%;
-    height: 370px;
+    height: auto;
     margin-bottom: 3rem;
   }
   .activities .activities__overlap1 > a:nth-child(1) > div {
@@ -793,7 +791,7 @@ header .header__register > li:hover {
   }
   .activities .activities__overlap1 > a:nth-child(2) {
     width: 100%;
-    height: 370px;
+    height: auto;
   }
   .activities .activities__overlap1 > a:nth-child(2) > div {
     width: 100%;
@@ -804,10 +802,18 @@ header .header__register > li:hover {
   .activities .activities__overlap1 > a:nth-child(2) > div h3 {
     margin-bottom: 1rem;
   }
+
+  .activities__overlap1 > a:nth-child(2) > div {
+    height: 370px;
+  }
+
+  .activities__overlap1 > a:nth-child(1) > div {
+    height: 370px;
+  }
 }
-@media only screen and (min-width: 581px) and (max-width: 761px) {
+@media only screen and (min-width: 561px) and (max-width: 761px) {
   body {
-    max-width: 700px;
+    max-width: 580px;
     margin: auto;
   }
 
@@ -817,7 +823,7 @@ header .header__register > li:hover {
   }
 
   nav {
-    width: 100%;
+    width: 80%;
   }
 
   .header {
@@ -832,6 +838,7 @@ header .header__register > li:hover {
   }
   .header__links {
     width: 100%;
+    text-align: center;
   }
 
   .section1 {
@@ -857,7 +864,7 @@ header .header__register > li:hover {
   }
   .filters__containers {
     height: 100%;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
   }
@@ -871,8 +878,94 @@ header .header__register > li:hover {
     height: 50px;
     width: 50px;
   }
+
+  .places {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .places__card__popular {
+    position: relative;
+  }
+  .places__popular {
+    margin-left: 0;
+    width: 100%;
+  }
+  .places__popular__reviews > div {
+    position: absolute;
+    bottom: 10%;
+  }
+  .places__hotels {
+    width: 100%;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .popular__link {
+    width: 90%;
+  }
+
+  .activities__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .activities__list > a {
+    width: 95%;
+  }
+  .activities__list > a > div {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .activities__overlap {
+    width: 95%;
+  }
+  .activities__overlap > a {
+    margin-bottom: 1rem;
+    height: 100%;
+  }
+  .activities__overlap > a:nth-child(1) {
+    height: 420px;
+    margin-bottom: 1rem;
+  }
+  .activities__overlap > a:nth-child(1) > div > img {
+    height: 350px;
+  }
+  .activities__overlap > a:nth-child(2) {
+    height: 420px;
+  }
+  .activities__overlap > a:nth-child(2) > div > img {
+    height: 350px;
+  }
+  .activities__overlap--card {
+    height: 100%;
+  }
+  .activities__overlap--card > img {
+    height: 350px;
+  }
+
+  .activities__overlap1 {
+    width: 95%;
+  }
+  .activities__overlap1 > a {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .activities__overlap1 > a:nth-child(1) {
+    height: 420px;
+    margin-bottom: 1rem;
+  }
+  .activities__overlap1 > a:nth-child(1) > div > img {
+    height: 350px;
+  }
+  .activities__overlap1 > a:nth-child(2) {
+    height: 420px;
+  }
+  .activities__overlap1 > a:nth-child(2) > div > img {
+    height: 350px;
+  }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 560px) {
   body {
     max-width: 420px;
     margin: auto;

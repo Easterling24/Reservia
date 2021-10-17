@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 
-@media only screen and(min-width: 1100px) and (max-width: 1600px) {
+@media only screen and(min-width: 1150px) and (max-width: 1600px) {
 }
 
 body {
@@ -131,8 +131,8 @@ header {
     color: #fff;
     border-radius: 0 15px 15px 0;
     border-top: 3px solid transparent;
-    border-bottom:  3px solid transparent;
-    
+    border-bottom: 3px solid transparent;
+
     outline: none;
     border: none;
     cursor: pointer;
@@ -321,7 +321,7 @@ header {
     }
 
     .places__list__popular {
-      display: flex;  
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
@@ -337,11 +337,11 @@ header {
       display: flex;
       flex-direction: row;
       cursor: pointer;
+      position: relative;
       box-shadow: 0 3px 5px rgb(224, 217, 217);
 
       & > img {
         object-fit: cover;
-        height: 100%;
         width: 120px;
         border-radius: 25px 0 0 25px;
         transition: all 300ms;
@@ -361,11 +361,15 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    position: relative;
     padding: 0 20px;
 
     & > h3 {
       margin-bottom: 0;
+    }
+
+    & > div {
+      position: absolute;
+      bottom: 2%;
     }
   }
 }
@@ -400,10 +404,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-      & > a {
-        display: flex;
-        width: 280px;
-      }
+    & > a {
+      display: flex;
+      width: 280px;
+    }
   }
 
   &__overlap {
@@ -414,32 +418,27 @@ header {
     align-items: center;
 
     & > a:nth-child(1) {
-
       width: 100%;
       height: 180px;
-        & > div {
-           & > img {
-             height: 110px;
-           }
+      & > div {
+        & > img {
+          height: 110px;
         }
-
+      }
     }
 
-    & > a:nth-child(2){
+    & > a:nth-child(2) {
       width: 100%;
       height: 230px;
-        & > div {
-          & > img {
-            height: 150px;
-          }
+      & > div {
+        & > img {
+          height: 150px;
         }
+      }
     }
-
-    
 
     &--card:nth-child(1) {
       height: 100%;
-  
 
       & > img {
         object-fit: cover;
@@ -477,22 +476,21 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-     & > a:nth-child(1){
-       height: 210px;
-       & > div {
-         & > img {
-           height: 150px;
-         }
-       }
-
-     }
-
-     & > a:nth-child(2){
-       height: 180px;
+    & > a:nth-child(1) {
+      height: 210px;
       & > div {
-          & > img {
-            height: 100px;
-          }
+        & > img {
+          height: 150px;
+        }
+      }
+    }
+
+    & > a:nth-child(2) {
+      height: 180px;
+      & > div {
+        & > img {
+          height: 100px;
+        }
       }
     }
 
@@ -501,7 +499,7 @@ header {
       height: 100%;
       box-shadow: 0 3px 5px rgb(224, 217, 217);
       border-radius: 25px;
-    
+
       & > img {
         object-fit: cover;
         width: 100%;
@@ -517,7 +515,7 @@ header {
       height: 100%;
       box-shadow: 0 3px 5px rgb(224, 217, 217);
       border-radius: 25px;
-        
+
       & > img {
         object-fit: cover;
         width: 100%;
@@ -528,8 +526,6 @@ header {
         margin-bottom: 0.5rem;
       }
     }
-
-    
   }
 
   &__base {
@@ -575,9 +571,9 @@ header {
   }
 }
 
-@media only screen and ( min-width:1000px) and (max-width:1100px){
+@media only screen and (min-width: 1001px) and(max-width: 1149px) {
   body {
-    max-width: 1100px;
+    max-width: 950px;
     margin: auto;
   }
 
@@ -586,173 +582,152 @@ header {
   }
 
   .section1 {
-    margin-left: 1rem;
-  }
-  .filters {
-    margin-left: 1rem;
-      &__containers {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      &__base {
-        margin-top: 1rem;
-
-      }
-  }
-
-  .info{
-    margin-left: 1rem;
-  }
-
-  .places__list {
-    & > a {
-      width: 280px;
-    }
-  }
-
-  .places__card{
-    width: 100%;
-  }
-
-  .places__card__popular {
-    height: 180px;
-  }
-
-
- 
-
-
-
-
-
-  .activities__list div {
-    height: auto;
-  }
-
-  .activities__overlap1 {
-    &--card:nth-child(1){
-      height: auto;
-    }
-  }
-
-  .activities__base{
-    width: 220px;
-  }
-
-  .activities__overlap1 {
-    width: 220px;
-      &--card:nth-child(2) {
-        & > img {
-          height: 115px;
-        }
-
-      }
-   
-  }
-  .activities__overlap {
-    width: 220px;
-    &--card:nth-child(2){
-      height: 150px;
-    }
-  }
-
-}
-
-@media only screen and (min-width: 900px) and (max-width: 1000px) {
-  body {
-    max-width: 1000px;
-    margin: auto;
+    padding: 0 1rem;
   }
 
   .filters {
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 0 1rem;
 
     &__containers {
-      margin: 0;
+      flex-wrap: wrap;
     }
-
     &__base {
-      width: 170px;
-    }
-
-    &__icons {
-      color: $cd-text;
+      margin-bottom: 1rem;
     }
   }
-
-  .filters__base {
-    margin-right: 1rem;
-    width: 170px;
-    padding-left: 2rem;
-  }
-
   .info {
-    margin-top: 2rem;
-  }
-
-  .popular__link {
-    width: 100%;
-  }
-
-  .places__hotels{
-    width: 80%;
-      &__card {
-        width: 250px;
-      }
+    padding: 0 1rem;
   }
 
   .places__popular {
-    height: 100%;
-
     .places__card__popular {
-      margin-bottom: 2rem;
-      height: 150px;
-      width: 95%;
-
-      & > img {
-        height: auto;
+      height: 180px;
+      position: relative;
+      & > div {
+        & > div {
+          position: absolute;
+          bottom: 5%;
+        }
       }
     }
   }
 
-  .places__popular__reviews {
-    & > p {
-      margin-bottom: 10px;
-    }
-    & > div {
-      margin-bottom: 20px;
-    }
-  }
-
- 
-
   .activities__base {
-    height: auto;
- 
+    width: 220px;
   }
 
-  .activities__overlap1 {
-    &--card:nth-child(1) {
-      height: auto;
+  .activities__overlap {
+    & > a:nth-child(1) {
+      width: 200px;
+    }
+
+    & > a:nth-child(2) {
+      width: 200px;
+    }
+
+    &--card {
+      width: 200px;
+    }
+  }
+}
+
+@media only screen and (min-width: 874px) and (max-width: 1000px) {
+  .header__logo {
+    margin-left: 1rem;
+  }
+
+  body {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .section1 {
+    padding: 0 1rem;
+  }
+
+  .filters {
+    padding: 0 1rem;
+    &__containers {
+      flex-wrap: wrap;
+    }
+
+    &__base {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .info {
+    padding: 0 1rem;
+  }
+
+  .popular__link {
+    height: 250px;
+  }
+
+  .places__popular {
+    width: 50%;
+
+    &__reviews {
+      & > div {
+        position: absolute;
+        bottom: 5%;
+      }
+    }
+
+    .places__card__popular {
+      height: 200px;
+      position: relative;
+    }
+  }
+
+  .activities {
+    &__title {
+      margin-left: 0;
+    }
+    padding: 0 1rem;
+    &__overlap {
+      &--card {
+        width: 220px;
+      }
+    }
+
+    &__base {
+      width: 200px;
+    }
+
+    &__overlap {
+      & > a {
+        width: 200px;
+      }
+      &--card {
+        width: 200px;
+      }
+    }
+
+    &__overlap1 {
+      &--card {
+        width: 200px;
+      }
+      & > a {
+        width: 200px;
+      }
+      & > a:nth-child(1) {
+        height: 220px;
+      }
     }
   }
 }
 
 // Tablet Size
 
-@media only screen and (min-width: 740px)  and (max-width: 1024px) {
+@media only screen and (min-width: 762px) and (max-width: 873px) {
   .header__logo {
     margin-left: 1rem;
   }
 
   body {
-    max-width: 768px;
+    max-width: 750px;
     margin: auto;
- 
   }
 
   .section1 {
@@ -776,7 +751,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0;
 
     &__title {
       font-size: 1.3rem;
@@ -797,6 +772,7 @@ header {
       margin: 1rem 10px;
       height: 60px;
       padding-left: 4rem;
+      width: 200px;
       & > div {
         height: 60px;
         width: 60px;
@@ -816,7 +792,6 @@ header {
     &__popular {
       margin-left: 0;
       margin-bottom: 2rem;
-      
     }
 
     & .places__list__popular {
@@ -832,6 +807,7 @@ header {
       display: flex;
       height: 300px;
       width: 100%;
+      position: relative;
       flex-direction: column;
 
       & > img {
@@ -840,11 +816,6 @@ header {
         height: 150px;
         border-radius: 25px 25px 0 0;
       }
-    }
-
-    &__popular__reviews {
-      width: 90%;
-      position: relative;
     }
 
     &__hotels {
@@ -884,13 +855,11 @@ header {
   .activities__list {
     display: flex;
     flex-direction: column;
-  
   }
 
   .activities {
     &__base {
-      margin: 0;
- 
+      margin-bottom: 1rem;
     }
 
     .activities__list {
@@ -898,6 +867,7 @@ header {
         width: 100%;
         & > div {
           width: 100%;
+          height: 410px;
           margin-bottom: 2rem;
         }
       }
@@ -905,67 +875,89 @@ header {
 
     .activities__overlap {
       width: 100%;
-      margin-bottom: 2rem;
+
       & > a:nth-child(1) {
         width: 100%;
+        height: auto;
         margin-bottom: 3rem;
-      
-        & > div{
+
+        & > div {
           width: 100%;
-          height: 200px;
-  
+          height: 380px;
+
           & > img {
-            height: 130px;
+            height: 300px;
+          }
+        }
+      }
+
+      & > a:nth-child(2) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+        & > div {
+          height: 380px;
+          & > img {
+            height: 300px;
           }
         }
       }
     }
 
-    .activities__overlap1{
+    .activities__overlap1 {
       width: 100%;
-      & > a:nth-child(1){
+
+      & > a:nth-child(1) {
         width: 100%;
-        height: 370px;
+        height: auto;
         margin-bottom: 3rem;
 
         & > div {
           width: 100%;
-       
+
           & > img {
-            height: 300px;  
+            height: 300px;
           }
-        } 
+        }
       }
 
-      & > a:nth-child(2){
+      & > a:nth-child(2) {
         width: 100%;
-        height: 370px;
-        & > div { 
+        height: auto;
+        & > div {
           width: 100%;
           & > img {
             height: 300px;
           }
 
-             h3 {
+          h3 {
             margin-bottom: 1rem;
           }
-       
         }
       }
     }
+  }
 
+  .activities__overlap1 {
+    & > a:nth-child(2) {
+      & > div {
+        height: 370px;
+      }
+    }
+  }
 
-
-  
-
-     
-    
+  .activities__overlap1 {
+    & > a:nth-child(1) {
+      & > div {
+        height: 370px;
+      }
+    }
   }
 }
 
-@media only screen and(min-width: 581px)  and (max-width: 761px) {
+@media only screen and(min-width: 561px) and (max-width: 761px) {
   body {
-    max-width: 700px;
+    max-width: 580px;
     margin: auto;
   }
   header {
@@ -974,7 +966,7 @@ header {
   }
 
   nav {
-    width: 100%;
+    width: 80%;
   }
 
   .header {
@@ -989,6 +981,7 @@ header {
     }
     &__links {
       width: 100%;
+      text-align: center;
     }
   }
 
@@ -1014,7 +1007,7 @@ header {
     padding: 0;
     &__containers {
       height: 100%;
-      width: 100%;
+      width: 70%;
       display: flex;
       flex-direction: column;
     }
@@ -1029,11 +1022,122 @@ header {
       }
     }
   }
+
+  .places {
+    display: flex;
+    flex-direction: column-reverse;
+    &__card__popular {
+      position: relative;
+    }
+
+    &__popular {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    &__popular__reviews {
+      & > div {
+        position: absolute;
+        bottom: 10%;
+      }
+    }
+
+    &__hotels {
+      width: 100%;
+      padding: 0;
+      margin-top: 1rem;
+    }
+  }
+
+  .popular__link {
+    width: 90%;
+  }
+
+  .activities {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > a {
+        width: 95%;
+        & > div {
+          width: 100%;
+
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+
+  .activities__overlap {
+    width: 95%;
+    & > a {
+      margin-bottom: 1rem;
+      height: 100%;
+    }
+
+    & > a:nth-child(1) {
+      height: 420px;
+      margin-bottom: 1rem;
+      & > div {
+        & > img {
+          height: 350px;
+        }
+      }
+    }
+
+    & > a:nth-child(2) {
+      height: 420px;
+      & > div {
+        & > img {
+          height: 350px;
+        }
+      }
+    }
+
+    &--card {
+      height: 100%;
+      & > img {
+        height: 350px;
+      }
+    }
+  }
+
+  .activities__overlap1 {
+    width: 95%;
+    & > a {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    & > a:nth-child(1) {
+      height: 420px;
+      margin-bottom: 1rem;
+
+      & > div {
+        & > img {
+          height: 350px;
+        }
+      }
+    }
+
+    & > a:nth-child(2) {
+      height: 420px;
+
+      & > div {
+        & > img {
+          height: 350px;
+        }
+      }
+      & > h3 {
+      }
+    }
+  }
 }
 
 // Phone Size
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 560px) {
   body {
     max-width: 420px;
     margin: auto;
@@ -1155,8 +1259,6 @@ header {
     }
 
     &__base:nth-child(2) {
-
-
       order: 4;
       & > span {
         padding-left: 2rem;
@@ -1266,15 +1368,14 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-        & > a{
-          width: 95%;
-        }
+      & > a {
+        width: 95%;
+      }
     }
 
     &__base {
       width: 100%;
       margin: 1rem 0;
-      
 
       & > img {
         object-fit: cover;
@@ -1292,53 +1393,23 @@ header {
         margin: 1rem 0;
       }
 
-      & > a:nth-child(1){
+      & > a:nth-child(1) {
         width: 95%;
       }
 
-      & > a:nth-child(2){
+      & > a:nth-child(2) {
         width: 95%;
       }
-      
-
-      // & > div:nth-child(1) {
-      //   height: 100%;
-      
-      //   & > img {
-      //     height: 160px;
-      //   }
-      // }
-      // & > div:nth-child(2) {
-      //   height: 100%;
-      //   margin-bottom: 1rem;
-      //   & > img {
-      //     height: 160px;
-      //   }
-      // }
     }
 
     &__overlap1 {
       width: 100%;
       display: flex;
       align-items: center;
-        & > a{
-          width: 95%;
-          margin: 1rem 0;
-        }
-      // & > div:nth-child(1) {
-      //   height: 100%;
-      //   margin-bottom: 3rem;
-      //   & > img {
-      //     height: 160px;
-      //   }
-      // }
-      // & > div:nth-child(2) {
-      //   height: 100%;
-      //   margin-bottom: 3rem;
-      //   & > img {
-      //     height: 160px;
-      //   }
-      // }
+      & > a {
+        width: 95%;
+        margin: 1rem 0;
+      }
     }
   }
 
@@ -1347,8 +1418,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
-
-  
     ul {
       width: 300px;
     }
