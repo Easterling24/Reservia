@@ -568,6 +568,7 @@ header {
   }
   h3 {
     text-align: left;
+    margin-left: 2.3rem;
   }
 }
 
@@ -1179,21 +1180,24 @@ header {
           font-size: 1rem;
         }
       }
-    }
+    } 
 
-    .header__register {
-      position: absolute;
-      right: 0;
-      top: 0;
-      margin-right: 0.5rem;
+  }
 
-      & > li {
-        border: 2px solid transparent;
-        &:hover {
-          border: 2px solid transparent;
-        }
-      }
+  .header__links:nth-child(3){
+    position: absolute;
+    text-align: right;
+    border-bottom: 3px solid transparent;
+    width: 150px;
+    right: 0;
+    top: 1%;
+    &:hover {
+      border-bottom: 3px solid transparent;
     }
+    & > a {
+      margin-right: 2rem;
+    }
+   
   }
 
   .section1 {
@@ -1278,6 +1282,15 @@ header {
     & > p {
       margin-left: -1rem;
     }
+  }
+
+  .places__popular{
+    .places__card__popular{
+
+      height: 160px;
+    }
+   
+    
   }
 
   .places {
