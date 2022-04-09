@@ -1,10 +1,16 @@
 
+# OpenClassroom Project 2
 
-Targeting: 
--Online reservation website, displaying avaialble places to stay according to client's chosen location
+### Objective: Develop a searching algorithm  [Application demo](https://easterling24.github.io/YevgeniyGupalo__P2__15092021/)
 
 
 
-Objectives: 
-- Implementing HTML and CSS outline
-- Readablity
+## Project installation
+
+* Start Git bash
+* git clone https://github.com/Easterling24/YevgeniyGupalo__P2__15092021.git
+
+
+## Made with
+* [Git](https://git-scm.com/)
+* [Visual Studio Code](https://code.visualstudio.com/) 
