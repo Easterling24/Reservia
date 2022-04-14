@@ -3,6 +3,8 @@
 
 ### Building an HTML & CSS Layout [Application demo](https://easterling24.github.io/YevgeniyGupalo__P2__15092021/)
 
+![Screenshot](Screen-P2.JPG)
+
 ## Project installation
 
 * Start Git bash
