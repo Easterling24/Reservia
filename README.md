@@ -1,9 +1,7 @@
 
 # OpenClassroom Project 2
 
-### Objective: Develop a searching algorithm  [Application demo](https://easterling24.github.io/YevgeniyGupalo__P2__15092021/)
-
-
+### Building an HTMK & CSS Layout [Application demo](https://easterling24.github.io/YevgeniyGupalo__P2__15092021/)
 
 ## Project installation
 
