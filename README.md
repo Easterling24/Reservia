@@ -3,7 +3,7 @@
 
 ## About it
 The objective of the project is to properly build a semantic HTML layout and add minimum styling with CSS though i used SCSS as a favorite library </br>
-You can also have a look on the [result](https://yevgeniy18.github.io/YevgeniyGupalo__P2__15092021/)
+You can also have a look at the [result](https://yevgeniy18.github.io/YevgeniyGupalo__P2__15092021/)
 
 ## Project installation
 * git clone https://github.com/Yevgeniy18/YevgeniyGupalo__P2__15092021.git
