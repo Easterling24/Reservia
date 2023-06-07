@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
