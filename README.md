@@ -3,7 +3,7 @@
 
 ## Project installation
 
-* git clone https://github.com/Easterling24/YevgeniyGupalo__P2__15092021.git
+* git clone https://github.com/Yevgeniy18/YevgeniyGupalo__P2__15092021.git
 * npm install 
 
 
